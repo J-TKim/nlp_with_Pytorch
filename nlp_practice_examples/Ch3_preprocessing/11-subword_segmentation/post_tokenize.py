@@ -1,11 +1,11 @@
 import sys
 
-STR = '_'
+STR = '▁'
 
 if __name__ == "__main__":
     ref_fn = sys.argv[1]
 
-    f = open(ref_fn, 'r', encoding="utf-8")
+    f = open(ref_fn, 'r')
 
     for ref in f:
         ref_tokens = ref.strip().split(' ')
